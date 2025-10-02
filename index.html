@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="https://img.icons8.com/fluency/48/books.png" />    -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=114182&format=png&color=000000"/>   
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- About Button -->
+<div id="aboutButton" title="About Project">🛈</div>
+<!-- Overlay -->
+<div id="overlay"></div>
+<!-- About Panel -->
+<div id="aboutPanel">
+  <button id="closeAbout">×</button>
+  <h2>Smart Study Planner</h2>
+  <h3>About the Platform</h3>
+  <p>
+    Smart Study Planner is a <strong>digital tool designed to help students organize, track, and complete their study tasks efficiently</strong>. 
+    It focuses on <strong>productivity, consistency, and visualization of tasks</strong> to help you manage your learning schedule effectively.
+  </p>
+  <h3>Sections Explained</h3>
+
+  <h4>1. <u>Add New Task</u></h4>
+  <ul>
+    <li>Use this section to <strong>add your study tasks</strong>.</li>
+    <li>Enter the <strong>task name, subject, and due date</strong>.</li>
+    <li>Helps you <strong>plan what to study and when</strong>.</li>
+  </ul>
+
+  <h4>2. <u>Progress</u></h4>
+  <ul>
+    <li>Shows your <strong>overall progress based on completed tasks</strong>.</li>
+    <li>Visual representation helps you <strong>understand how much work is done and pending</strong>.</li>
+  </ul>
+
+  <h4>3. <u>Your Tasks</u></h4>
+  <ul>
+    <li>Displays all your <strong>added tasks</strong>.</li>
+    <li>Tasks can be <strong>sorted by deadline or subject</strong>.</li>
+    <li>You can <strong>mark tasks as complete, edit details, or delete tasks</strong>.</li>
+    <li>Ensures all tasks are in <strong>one organized list</strong> for easy management.</li>
+  </ul>
+
+  <h4>4. <u>Streak Tracker</u></h4>
+  <ul>
+    <li>Tracks your <strong>weekly streaks</strong> of completed tasks.</li>
+    <li>Helps <strong>motivate consistent studying</strong> by showing consecutive days of task completion.</li>
+  </ul>
+
+  <h4>5. <u>Task Timeline</u></h4>
+  <ul>
+    <li>Shows a <strong>chronological list of tasks</strong>.</li>
+    <li>Helps you <strong>see which tasks are upcoming or completed at a glance</strong>.</li>
+  </ul>
+
+  <h3>Getting Started – Step by Step</h3>
+  <ol>
+    <li>Click <strong>“Add New Task”</strong> and enter your study activities.</li>
+    <li>Check <strong>Progress</strong> to track completed tasks.</li>
+    <li>Use <strong>Your Tasks</strong> to edit, delete, or mark tasks complete.</li>
+    <li>Monitor your <strong>Streak</strong> to stay consistent.</li>
+    <li>Refer to <strong>Task Timeline</strong> to view all upcoming and completed tasks.</li>
+  </ol>
+
+  <h3>Highlights / Key Benefits</h3>
+  <ul>
+    <li><strong>Today's tasks will trigger alerts/pop-ups</strong> to remind you.</li>
+    <li>Encourages <strong>consistent studying</strong> with streak tracking.</li>
+    <li>Helps <strong>prioritize and organize tasks by subject or deadline</strong>.</li>
+    <li>Provides a <strong>visual overview of all tasks and completion progress</strong>.</li>
+    <li>Makes <strong>task management simple, interactive, and motivating</strong>.</li>
+  </ul>
+</div>
+
+
+  <!--------------- Header Section ---------------------->
+  <header>
+    <!-- <h1>📘 Smart Study Planner</h1> -->
+    <h1><span class="emoji">📘</span> Smart Study Planner</h1>
+    <p>Organize your study goals and track progress easily</p>
+  </header>
+
+  <!--------------------- Add Task Form ---------------------->
+  <section class="task-form">
+    <h2>Add New Task</h2>
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Enter task name" required>
+      <input type="text" id="taskSubject" placeholder="Enter subject" required>
+      <input type="date" id="taskDeadline" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+    <!--------------- Progress Tracker -------------->
+    <section class="progress-tracker">
+      <h2>Progress</h2>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <p id="progressText">0% Completed</p>
+    </section> 
+
+  <!------------------ Main Layout --------------->
+<div class="main-layout">
+  <!------- Left Column ------------>
+  <div class="left-column">
+    <!------------- Task List ----------->
+    <section class="task-list">
+      <h2>Your Tasks</h2>
+      <ul id="taskContainer"></ul>
+    </section>
+  </div>
+
+  <!----------- Right Column --------------->
+  <div class="right-column">
+    <!-- Streak -->
+<!-- <section class="streak-section">
+  <div class="streak-header">
+    <h2>🔥 Streak</h2>
+    <p id="streakCounter">🔥 Current Streak: 0 days</p>
+  </div>
+  <div id="streakGrid"></div>
+</section> -->
+
+<section class="streak-section">
+  <div class="streak-header">
+    <h2>
+      <img src="https://img.icons8.com/?size=100&id=QV5JEtrTP6nH&format=png&color=000000" 
+           alt="Streak Icon" class="streak-icon">
+      Streak
+    </h2>
+    <p id="streakCounter">
+      <img src="https://img.icons8.com/?size=100&id=TQ4r63ndVBBN&format=png&color=000000" 
+           alt="Streak Icon" class="streak-icon">
+      <!-- Current Streak: <b><u>0 days</u></b> -->
+       Current Streak: <b><u><span id="streakDays">0</span> days</u></b>
+    </p>
+  </div>
+  <div id="streakGrid"></div>
+</section>
+
+  <!-- Timeline --
+    <section class="timeline-section">
+      <i class="fa-solid fa-book fa-2xs"></i>
+      <h2>📅 Task Timeline</h2>
+      <div id="timeline"></div>
+  </section>----->
+    <section class="timeline-section">
+  <i class="fa-solid fa-book fa-2xs"></i>
+  <h2>
+    <img src="https://img.icons8.com/?size=100&id=R9WAjxlq8Xma&format=png&color=000000" 
+         alt="Task Timeline Icon" class="icon">
+    Task Timeline
+  </h2>
+  <div id="timeline"></div>
+</section>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
