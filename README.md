@@ -30,10 +30,10 @@ Smart Study Planner is a **web-based tool designed to help students organize, tr
 
 ## **Technologies Used**
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6)  
+- **Frontend:** HTML5, CSS, JavaScript 
 - **Storage:** Local Storage (Web Storage API) for data persistence  
-- **Tools/IDE:** VS Code / Eclipse IDE  
-- **Deployment:** GitHub Pages / Netlify / Vercel (optional)  
+- **Tools/IDE:** VS Code
+- **Deployment:** GitHub Pages 
 
 ---
 
@@ -53,7 +53,7 @@ Smart Study Planner is a **web-based tool designed to help students organize, tr
 3. Display Tasks → Show list with Edit/Delete/Complete + sorting.  
 4. Track Progress → Update progress bar dynamically.  
 5. Streak Tracker → Daily login updates streak.  
-6. Task Timeline → Arrange tasks by due date (✅ completed / ⏳ pending).  
+6. Task Timeline → Arrange tasks by due date (✅ completed).  
 7. Daily Alerts → Pop-up if task deadline is today.  
 
 ---
@@ -64,7 +64,7 @@ Smart Study Planner is a **web-based tool designed to help students organize, tr
 2. Test in a browser for UI & functionality.  
 3. Ensure Local Storage saves tasks & progress across sessions.  
 4. Run locally with Live Server for preview.  
-5. Deploy on GitHub Pages / Netlify / Vercel for public access.  
+5. Deploy on GitHub Pages for public access.  
 
 ---
 
@@ -81,6 +81,7 @@ Smart Study Planner is a **web-based tool designed to help students organize, tr
 ## **Screenshots**
 
 <img width="1920" height="1080" alt="Screenshot (739)" src="https://github.com/user-attachments/assets/92115e27-d85d-4aaa-9983-0b77f190b0e3" />
+
 <br><br>
 <img width="1920" height="1080" alt="Screenshot (741)" src="https://github.com/user-attachments/assets/146ea82e-89eb-43b9-aa24-5bc38220117a" />
 
