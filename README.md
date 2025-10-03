@@ -80,8 +80,7 @@ Smart Study Planner is a **web-based tool designed to help students organize, tr
 
 ## **Screenshots**
 
-
 <img width="1920" height="1080" alt="Screenshot (739)" src="https://github.com/user-attachments/assets/92115e27-d85d-4aaa-9983-0b77f190b0e3" />
-
+<br><br>
 <img width="1920" height="1080" alt="Screenshot (741)" src="https://github.com/user-attachments/assets/146ea82e-89eb-43b9-aa24-5bc38220117a" />
 
